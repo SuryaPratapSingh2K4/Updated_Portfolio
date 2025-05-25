@@ -21,12 +21,13 @@
             <a href="#Contact">Contact</a>
         </nav>
     </header>
+    
     <section class="home">
         <div class="home-img">
             <img src="images/profile.jpeg" alt="Profile-image">
         </div>
         <div class="home-content">
-            <h3>Hello, there 👋 I am</h3>
+            <h3>Hello, there I am</h3>
             <h1>Surya Pratap Singh</h1>
             <h3>And I'm a <span class="multiple-text">Frontend-Developer</span></h3>
             <p>I'm a Front-end-Developer with Experience in Websites and Mobile Development</p>
@@ -58,7 +59,7 @@
     </section>
 
     <section class="MySkills">
-        <h2 class="heading">My <span>Skills 💪</span></h2>
+        <h1 class="heading">My <span>Skills 💪</span></h1>
         <div class="skills-container">
             <div class="skills-box">
                 <i class="bx bx-code">Code</i>
@@ -77,9 +78,132 @@
                 </p>
                 <a href="#" class="btn">Read More</a>
             </div>
+        </div>
 
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide" style="--position: 1"><img src="images/html.png" alt="slider-image1"></div>
+                <div class="slide" style="--position: 2"><img src="images/css.png" alt="slider-image"></div>
+                <div class="slide" style="--position: 3"><img src="images/javascript.png" alt="slider-image"></div>
+                <div class="slide" style="--position: 4"><img src="images/react.png" alt="slider-image"></div>
+                <div class="slide" style="--position: 5"><img src="images/flutter.png" alt="slider-image"></div>
+                <div class="slide" style="--position: 6"><img src="images/firebase.png" alt="slider-image"></div>
+                <div class="slide" style="--position: 7"><img src="images/Git.png" alt="slider-image"></div>
+                <div class="slide" style="--position: 8"><img src="images/c++.png" alt="slider-image"></div>
+                <div class="slide" style="--position: 9"><img src="images/figma.png" alt="slider-image"></div>
+                <div class="slide" style="--position: 10"><img src="images/after effects.png" alt="slider-image"></div>
+                <div class="slide" style="--position: 11"><img src="images/premiere pro.png" alt="slider-image"></div>
+                <div class="slide" style="--position: 12"><img src="images/illustrator.png" alt="slider-image"></div>
+                <div class="slide" style="--position: 13"><img src="images/lightroom.png" alt="slider-image"></div>
+
+            </div>
         </div>
     </section>
+
+    <section class="MyProjects">
+        <h1 class="heading">My <span>Projects</span>👨‍💻</h1>
+            <div class="project-box">
+                <div class="project-image">
+                    <img class="autoBlur" onclick="window.open(this.src)" src="images/OD.jpeg" alt="project-image">
+                </div>
+                <div class="project-info fadeInRight">
+                    <h1>Object-detection</h1>
+                    <p>
+                        Our object detection app, built with React.js and TensorFlow.js,
+                        uses models like COCO-SSD to identify objects in images or videos
+                        in real-time. It highlights detected objects with bounding boxes
+                        and displays their confidence scores, ensuring users can see the
+                        accuracy of each prediction instantly. 🚀
+                    </p>
+                    <a href="#" class="btn"><i class='bx bx-link-alt'>Github</i></a>
+                    <!-- <button><i class='bx bx-link-alt'>Github</i></button> -->
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-video">
+                    <video class="autoBlur" controls="" id="vid1" src="videos/chat-app.mp4"></video>
+                </div>
+                <div class="project-info fadeInRight">
+                    <h1>Chat-App</h1>
+                    <p>
+                        Embarking on an exhilarating journey of innovation & Crafting connections
+                        with every line of code! Excited to unveil our latest project: a minimal
+                        chat app built with Flutter and Firebase for both iOS and Android.
+                        Leveraging the power of Flutter's cross-platform capabilities and Firebase's
+                        real-time database, redefining communication in the digital realm which can
+                        connect between the two users.stantly. 🚀
+                    </p>
+
+                    <a href="#" class="btn"><i class='bx bx-link-alt'>Github</i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-video">
+                    <video class="autoBlur" controls="" id="vid2" src="videos/mr.chemist.mp4"></video>
+                </div>
+                <div class="project-info fadeInRight">
+                    <h1>Mr.Chemist: An Automatic Drug Dispenser</h1>
+                    <p>
+                        Mr. Chemist is an automatic drug dispenser system that combines a mobile app with an ATM-like hardware prototype.
+                        The app allows users to scan their prescription QR, which sends a command via Firebase Cloud Functions to the hardware controller (based on a Raspberry Pi).
+                        The Raspberry Pi reads the command and releases the correct dosage
+                    </p>
+
+                    <a href="#" class="btn"><i class='bx bx-link-alt'>Github</i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-image">
+                    <img class="autoBlur" onclick="window.open(this.src)" src="images/Zencal.png" alt="project-image">
+                </div>
+                <div class="project-info fadeInRight">
+                    <h1>Zencal</h1>
+                    <p>
+                        A centralised app for colleges and its clubs. An app that would contain-
+
+                        -> A centralised calendar for all the clubs and college events,
+
+                        -> An automatic attendance calculator that shows the minimum classes to attend
+                        for requisite attendance,
+
+                        -> A personalised to-do list for the user to remain organised.
+                    </p>
+                    <a href="#" class="btn"><i class='bx bx-link-alt'>Github</i></a>
+                </div>
+            </div>
+    </section>
+
+    <section class="contact">
+        <h1 class="heading">Contact <span style="color: var(--main-color);">Me</span></h1>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" class="Email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+        <p class="copyright">
+            &copy; 2024 Surya Pratap Singh &mdash; All Rights Reserved.
+            <!-- <a href="mailto:suryapratapsingh@email.com">suryapratapsingh@email.com</a> -->
+        </p>
+    </footer>
 </body>
 
 </html>
