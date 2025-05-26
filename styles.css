@@ -10,9 +10,9 @@
 }
 :root{
     --bg-color: #fff;
-    --snd-bg-color: #d5fdf9;
+    --snd-bg-color: #727fde6f;
     --text-color: #000;
-    --main-color: #007f73;
+    --main-color: #813bcb;
 }
 html{
     font-size: 62.5%;

@@ -47,12 +47,21 @@
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menu.onclick = () => {
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
+menu.addEventListener('click', function() {
+    // menu.classList.toggle('bx-bx');
+    navbar.classList.add('active');
+});
+navbar.addEventListener('click', function() {
+    // menu.classList.remove('bx-bx');
+    navbar.classList.remove('active');
+});
 
-window.onscroll = () => {
-    menu.classList.remove('bx-x');
-    menu.classList.remove('active');
-}
+// menu.onclick = () => {
+//     menu.classList.toggle('bx-x');
+//     navbar.classList.toggle('active');
+// }
+
+// window.onscroll = () => {
+//     menu.classList.remove('bx-x');
+//     menu.classList.remove('active');
+// }
