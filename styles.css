@@ -576,7 +576,13 @@ span{
 @media (max-width: 617px) {
     #menu-icon{
         display: block;
-        padding-right: 74.3%;
+        position: absolute;
+        
+        /* top: 50%; */
+        right: 73.5%;
+        font-size: 50px;
+        color: var(--bg-color);
+        padding-right: 16px;
     }
     .navbar{
         position: absolute;
@@ -611,9 +617,14 @@ span{
         width: 70vw;
         margin-top: 80px;
     }
+    .about{
+        max-width: 420px;
+        /* max-width: 400px; */
+    }
     .about-img img{
         width: 70vw;
         margin-top: 50px;
+        
     }
     .home-content{
         margin-top: 30px;
@@ -640,21 +651,32 @@ span{
     .about-content p{
         font-size: 16px;
     }
+
+    .MySkills{
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
     
     .MySkills h1{
         text-align: center;
         font-size: 50px;
         width: 400px;
-        margin-left: -90px;
+        /* margin-left: -90px; */
         margin-top: 0px;
     }
     .skills-container{
+        max-width: 400px;
         flex-direction: column;
         align-items: center;
+        justify-items: center;
+        justify-content: center;
     }
     .skills-box{
         width: 350px;
         height: 350px;
+        max-width: 400px;
+        justify-content: center;
         /* margin-bottom: 20px; */
     }
     .skills-box i{
@@ -700,35 +722,74 @@ span{
         width: 80px;
     }
     .MyProjects h1{
+        justify-content: center;
         text-align: center;
         font-size: 50px;
-        width: 400px;
-        margin-top: 0px;
+        width: 370px;
+        margin-top: 30px;
+        margin-bottom: -15px;
     }
     .project-box{
         flex-direction: column;
         align-items: center;
+        justify-items: center;
         height: auto;
-        width: 300px;
+        width: 355px;
+        /* max-width: 320px; */
     }
     .project-info{
+            width: 90%;
+            padding-right: 0;
+            margin-top: 20px;
+        
+        }
+
+    .project-info p{
         width: 100%;
-        padding-right: 0;
-        /* margin-top: 20px; */
-        text-align: left;
-        margin-left: 50px;
+        font-size: 16px;
+        margin-top: 15px;
+        max-width: 350px;
     }
+    
     .project-info h1{
         font-size: 30px;
         width: 100%;
         text-align: start;
         color: var(--main-color);
+        max-width: 350px;
+        margin-bottom: 10px;
     }
     .project-image{
-        min-width: 350px;
+        margin-left: 0;
+        min-width: 320px;
+        justify-items: center;
+        /* margin-right: 5px; */
     }
     .project-video{
-        min-width: 350px;
+        margin-left: 0;
+        min-width: 320px;
+        margin-right: 5px;
+    }
+    .contact form{
+        /* padding: 50px 0; */
+        margin-bottom: 100px;
+        justify-items: center;
+
+    }
+    .contact h1{
+        text-align: center;
+        font-size: 50px;
+        margin-top: -120px;
+        margin-bottom: 50px;
+    }
+    .input-box{
+        width: 380px;
+        height: auto;
+        /* margin-left: 16px; */
+    }
+    textarea{
+        max-width: 370px;
+        height: 350px;
     }
     
 }
