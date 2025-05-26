@@ -16,7 +16,7 @@
 }
 html{
     font-size: 62.5%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 body{
     background: var(--bg-color);
@@ -30,7 +30,6 @@ section{
 .header{
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
     width: 100%;
     height: 10%;
@@ -44,10 +43,8 @@ section{
     z-index: 1000;
 }
 .logo{
-    position: relative;
     font-size: 40px;
     color: var(--bg-color);
-    text-decoration: none;
     font-weight: 700;
     cursor: pointer;
     transition: 0.3s ease;
@@ -56,20 +53,22 @@ section{
     transform: scale(1.05);
 }
 .navbar a{
-    display: inline-block;
     font-size: 30px;
     font-weight: 700;
     color: var(--bg-color);
-    text-decoration: none;
     margin-left: 48px;
     transition: 0.5s ease;
 }
-.navbar a:hover{
+
+.navbar a:hover,
+.navbar a:active{
     color: var(--text-color);
 }
-.menu-icon{
+#menu-icon{
     font-size: 57px;
     color: var(--bg-color);
+    cursor: pointer;
+    display: none;
 }
 .home{
     justify-content: center;
@@ -213,7 +212,7 @@ span{
 }
 
 .MySkills h1{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     margin-top: -50px;
 }
 
@@ -261,7 +260,7 @@ span{
     height: 100px;
     position: absolute;
     width: 1550px;
-    margin-top: 100px;
+    margin-top: 180px;
     display: flex;
     overflow: hidden;
     align-content: center;
@@ -489,4 +488,253 @@ span{
     text-align: center;
     font-size: 16px;
     color: var(--text-color);
+}
+
+
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header{
+        padding: 30px 3%;
+    }
+    section {
+        padding: 150px 3%;
+    }
+    .MySkills{
+        padding: 100px;
+    }
+    .MyProjects .project-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+    .footer{
+        padding: 20px 3%;
+    }
+}
+
+@media (max-width: 991px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 255px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--main-color);
+        transition: all 0.5s ease;
+        backdrop-filter: blur(10px);
+    }
+    .navbar a{
+        display: block;
+        padding: 17px;
+        font-size: 22px;
+    }
+    .navbar.active{
+        right: 0;
+    }
+    .home{
+        flex-direction: column;
+    }
+    
+    .home-content h3{
+        font-size: 30px;
+    }
+    .home-content h1{
+        font-size: 70px;
+    }
+    .home-content{
+        order: 2;
+        margin-left: 15px;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 50px;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about-img img{
+        width: 70vw;
+        margin-top: 50px;
+    }
+    .MySkills h2{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 617px) {
+    #menu-icon{
+        display: block;
+        padding-right: 74.3%;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 255px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--main-color);
+        transition: all 0.5s ease;
+        backdrop-filter: blur(10px);
+        padding-right: 95%;
+    }
+    .navbar a{
+        display: block;
+        padding: 17px;
+        font-size: 22px;
+        
+    }
+    .navbar.active{
+        right: 0;
+    }
+    .header{
+        height: 2.5%;
+        padding: 15px;
+    }
+    .header a{
+        font-size: 30px;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 80px;
+    }
+    .about-img img{
+        width: 70vw;
+        margin-top: 50px;
+    }
+    .home-content{
+        margin-top: 30px;
+    }
+    .home-content h3{
+        font-size: 20px;
+    }
+    .home-content h1{
+        font-size: 35px;
+    }
+    .home-content p{
+        font-size: 18px;
+    }
+    .about-content{
+        padding: 0 20px;
+    }
+    .about-content h2{
+        font-size: 40px;
+    }
+    .about-content h3{
+        font-size: 25px;
+        max-width: 400px;
+    }
+    .about-content p{
+        font-size: 16px;
+    }
+    
+    .MySkills h1{
+        text-align: center;
+        font-size: 50px;
+        width: 400px;
+        margin-left: -90px;
+        margin-top: 0px;
+    }
+    .skills-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-box{
+        width: 350px;
+        height: 350px;
+        /* margin-bottom: 20px; */
+    }
+    .skills-box i{
+        font-size: 60px;
+    }
+    .skills-box p{
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    .skills-box a{
+        margin-top: 15px
+    }
+    .slider{
+        height: 80px;
+        margin-top: 100px;
+        margin-left: -100px;
+        mask-image: none;
+    }
+    .slide-track{
+    
+    display: flex;
+    width: calc(100px * 26);
+    position: relative;
+    }
+    @keyframes scroll{
+        from{
+            left: 100%;
+        }
+        to{
+            left: calc(100px * -1);
+        }
+    }
+    .slide{
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        animation: scroll 10s linear infinite;
+        transition: filter 0.8s;
+        animation-delay: calc((10s / 13) * (var(--position) - 1) - 10s)!important;
+        left: 100%;
+    }
+    .slide img{
+        width: 80px;
+    }
+    .MyProjects h1{
+        text-align: center;
+        font-size: 50px;
+        width: 400px;
+        margin-top: 0px;
+    }
+    .project-box{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 300px;
+    }
+    .project-info{
+        width: 100%;
+        padding-right: 0;
+        /* margin-top: 20px; */
+        text-align: left;
+        margin-left: 50px;
+    }
+    .project-info h1{
+        font-size: 30px;
+        width: 100%;
+        text-align: start;
+        color: var(--main-color);
+    }
+    .project-image{
+        min-width: 350px;
+    }
+    .project-video{
+        min-width: 350px;
+    }
+    
+}
+
+@media (max-width: 617px) {
+    html{
+        font-size: 50%;
+    }
 }
