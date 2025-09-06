@@ -64,12 +64,12 @@ section{
 .navbar a:active{
     color: var(--text-color);
 }
-#menu-icon{
+/* #menu-icon{
     font-size: 57px;
     color: var(--bg-color);
     cursor: pointer;
     display: none;
-}
+} */
 .home{
     justify-content: center;
     display: flex;
